@@ -28,7 +28,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/cd932e8292208cf23526d.jpg https://graph.org/file/36f5f5a0e80ed808bb6d8.jpg https://graph.org/file/7b7d15ed77f1dcee3a4a5.jpg https://graph.org/file/89b8032cd09c973a24110.jpg https://graph.org/file/64b4f7e57b95e631f74ef.jpg https://graph.org/file/92fccf062388e8f22eda2.jpg https://te.legra.ph/file/6e5c54297d18da6b4d92b.jpg https://te.legra.ph/file/6ac3adf373702737d1e5f.jpg https://te.legra.ph/file/4777ff03f152d5229da1b.jpg https://te.legra.ph/file/da83aad83524ca220d6e6.jpg https://graph.org/-03-28-833 https://graph.org/file/94441bebd362d3e3b306a.jpg https://te.legra.ph/file/bad76d5f3ef81d105bcfd.jpg https://graph.org/file/caef8696d145dc667de58.jpg https://graph.org/file/b87fe278afc06741e2104.jpg https://graph.org/file/da176d9f8d3230a8e88c4.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/bdc720faf2ff35cf92563.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/a96c590ca726b2dbb9d96.jpg")
@@ -46,10 +46,10 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001678094109')
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001678094109'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001826416677').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002106300485')  # Support group id (make sure bot is admin)
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002076091513')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002293731628').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002293731628').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002076230596').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002076230596').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
